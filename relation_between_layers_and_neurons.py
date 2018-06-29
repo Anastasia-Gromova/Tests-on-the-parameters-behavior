@@ -10,7 +10,7 @@ from keras.regularizers import l1_l2
 
 import numpy as np
 
-df = data('../../datasets/mushrooms.csv', 'file')
+df = data('../../datasets/train.csv', 'file')
 
 # cleaning the data
 
