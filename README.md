@@ -1,5 +1,7 @@
 # Tests-on-the-parameters-behavior
 
+As an example there were used datasets with binary predictions. The number of zeroes and ones is approximately even, the validation accuracy which was used in the plots sufficiently describes the performance of the model.
+
 ## Batch size
 
 ### batch_size_small_range.py
@@ -19,3 +21,10 @@ The same test was made for the bigger range. As it is better to take the value o
 
 Within the small ranges batch size doesn't have big influense. The value of 32 suits for the most of cases - it is power of two, not too big and not too small. In cases when it should be changed, big ranges should be taken into account (about 40-80 difference between values).
 
+## Learning rate
+
+### different value of learning rate applied to different optimizers
+
+The task of this experiment is to see how a change of the value for different optimizers. For the test there were taken all of the optimizers which are available at Keras package. The range of the learning rate is calculated according to the initial value of lr. The final validation accuracy is the mean of three iterations to make the experiment cleaner. The vertical line on the plots corresponds to the initial learning rate value.
+
+![alt text](plots/learning_rate.png)
