@@ -32,14 +32,14 @@ The task of this experiment is to see how a change of the value for different op
 ### conclusion on the learning rate test
 
 Out of all optimizers which were checked only one of them is non-adaptive, i.e. the rest of them set the learning rate value individually for each case.
-<b/> The experiment showed that the change in lr value doesn't make sence for adaptive optimizers - it doesn't influence on the performance or makes the result even worse.
+<br/> The experiment showed that the change in lr value doesn't make sence for adaptive optimizers - it doesn't influence on the performance or makes the result even worse.
 
 ## Relation between the number of layers and neurons
 
 ### relation_between_layers_and_neurons.py
 
 Both number of layers and number of neurons increase the complexity of the model. The task of the experiment is to show if these two parameters depend on each other. There were taken 7 numbers of layers from 1 to 30, and for each of them the model was trained with the different number of neurons (from 5 to 50).
-<b/> the result may be seen in a plot.
+<br/> the result may be seen in a plot.
 
 ![alt text](plots/neur_layers_relation.png)
 
