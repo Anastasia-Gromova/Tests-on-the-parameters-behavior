@@ -17,14 +17,32 @@ The same test was made for the bigger range. As it is better to take the value o
 
 ![alt text](plots/batch_big_size.png)
 
-### cocnlusion about the batch size test
+### cocnlusion on the batch size test
 
 Within the small ranges batch size doesn't have big influense. The value of 32 suits for the most of cases - it is power of two, not too big and not too small. In cases when it should be changed, big ranges should be taken into account (about 40-80 difference between values).
 
 ## Learning rate
 
-### different value of learning rate applied to different optimizers
+### learning_rate.py
 
 The task of this experiment is to see how a change of the value for different optimizers. For the test there were taken all of the optimizers which are available at Keras package. The range of the learning rate is calculated according to the initial value of lr. The final validation accuracy is the mean of three iterations to make the experiment cleaner. The vertical line on the plots corresponds to the initial learning rate value.
 
 ![alt text](plots/learning_rate.png)
+
+### conclusion on the learning rate test
+
+Out of all optimizers which were checked only one of them is non-adaptive, i.e. the rest of them set the learning rate value individually for each case.
+<b/> The experiment showed that the change in lr value doesn't make sence for adaptive optimizers - it doesn't influence on the performance or makes the result even worse.
+
+## Relation between the number of layers and neurons
+
+### relation_between_layers_and_neurons.py
+
+Both number of layers and number of neurons increase the complexity of the model. The task of the experiment is to show if these two parameters depend on each other. There were taken 7 numbers of layers from 1 to 30, and for each of them the model was trained with the different number of neurons (from 5 to 50).
+<b/> the result may be seen in a plot.
+
+![alt text](plots/neur_layers_relation.png)
+
+### conclusion on the neurons-layers test
+
+Plot shows, that with the small amount of layers (up to 5) the number of neurons doesn't have too big influence, but with 10 layers or more the performance is worse if the value of neurons is too small.
