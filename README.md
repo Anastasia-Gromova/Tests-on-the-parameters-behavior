@@ -1,6 +1,6 @@
 # Tests-on-the-parameters-behavior
 
-As an example there were used datasets with binary predictions. The number of zeroes and ones is approximately even, the validation accuracy which was used in the plots sufficiently describes the performance of the model.
+As an example there were used datasets with binary predictions. The number of zeroes and ones is approximately even, so the validation accuracy which was used in the plots sufficiently describes the performance of the model.
 
 ## Batch size
 
@@ -13,7 +13,7 @@ The main task of this research is to find out how the value for the batch size i
 
 ### batch_size_big_range.py
 
-The same test was made for the bigger range. As it is better to take the value of the batch size as power of two for the better memory allocation, the range was chosen according to that - from 2 to 512. Only one experiment was maden as the difference between values is enough big for the conclusion to be more evident.
+The same test was made for the bigger range. As it is better to take the value of the batch size as power of two for the better memory allocation, the range was chosen according to that - from 2 to 512. Only one experiment was made as the difference between values is enough big for the conclusion to be more evident.
 
 ![alt text](plots/batch_big_size.png)
 
